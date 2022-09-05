@@ -1,9 +1,10 @@
 # colore
 
-![colore](/colore.jpg)
+![colore](/colore/assets/colore.jpg)
 
 # Description
 This application will allow users to randomly generate color in Javascript.
+
 
 ## Link
 [Click Here](https://marikadicarlo.github.io/colore/)
