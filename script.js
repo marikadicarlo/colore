@@ -19,3 +19,17 @@ function randomRgbColor() {
 for (i = 0; i < 5; i++) {
     console.log(randomRgbColor());
 }
+
+function randomHexColor() {
+    let [r,g,b] = randomRgbColor();
+
+    let hr = r.toString(16).padStart(2, '0');
+    let hg = g.toString(16).padStart(2, '0');
+    let hb = b.toString(16).padStart(2, '0');
+
+    return "#" + hr + hg + hb;
+}
+
+for (i= 0; i <5; i++) {
+    console.log(randomHexColor());
+}
