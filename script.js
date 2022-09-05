@@ -30,6 +30,33 @@ function randomHexColor() {
     return "#" + hr + hg + hb;
 }
 
-for (i= 0; i <5; i++) {
-    console.log(randomHexColor());
-}
+// for (i= 0; i <5; i++) {
+//     console.log(randomHexColor());
+// }
+
+// function randomHslColor() {
+//     let h = positiveInteger(360);
+//     let s = positiveInteger(100);
+//     let l = positiveInteger(100);
+
+//     return [h,s,l];
+// }
+
+// for (i=0; i < 5; i++) {
+//     console.log(randomHslColor());
+// }
+
+function changeColor() {
+    let hex = randomHexColor();
+    document.getElementById('color').value = hex;
+    document.getElementById('text').innerHTML = hex;
+  }
+  
+  function clickHandler(event) {
+    changeColor();
+    event.preventDefault();
+  }
+  
+  document.addEventListener('click', clickHandler);
+  
+  changeColor();
